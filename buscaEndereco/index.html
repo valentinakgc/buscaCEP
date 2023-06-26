@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Endereço</title>
+</head>
+<body>
+    <h1>Busca de Endereço</h1>
+
+    <div class="busca">
+    <input id="cep" type="text" placeholder="Insira o CEP">
+    </div>
+
+    <div class="botao">
+    <button onclick="buscaCep()">Buscar</button>
+    </div>
+
+    <div class="inputs">
+        <input type="text" id="cidade" placeholder="Cidade" disabled>
+        <input type="text" id="estado" placeholder="Estado" disabled>
+        <input type="text" id="bairro" placeholder="Bairro" disabled>
+        <input type="text" id="logradouro" placeholder="Logradouro" disabled>
+    </div>
+
+    <p id="endereco"></p>
+
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F9F5E7;
+            margin-top: 10rem;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+        input[type="text"] {
+            width: 200px;
+            height: 25px;
+            padding: 5px;
+            margin: 5px;
+            background-color: #F8EAD8;
+            border-color: #EDDBC7;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+        .botao {
+            text-align: center;
+        }
+
+        .botao button {
+            display: inline-block;
+            padding: 10px 20px;
+            width: 100px;
+            font-size: 16px;
+            background-color: #606C5D;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .botao button:hover {
+            background-color: #4c5c49;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .busca {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #endereco {
+            text-align: center;
+            font-size: 18px;
+            color: #4c5c49;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+    </style>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
